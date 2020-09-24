@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+/* --- Media Queries ---  */
+@media (max-width: 992px){
+
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 576px){
+
+}
+
+/* --- Firefox Buf Fix --- */
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;    
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-backface-visibility: visible ;
+    backface-visibility: visible;
+}
+/* --- Fixed Background Image --- */
+figure{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important; 
+}
+.fixed-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#fixed{
+    background-color: aqua;
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);   
+            transform: translateZ(0);
+    will-change: transform;
+}
+/* --- Bootstrap Padding Fix */
+[class *= "col"]{
+    padding: 1em;
+}
+
+/* Dưới đây là phần cũ  */
+    /* style icon - này là cho cái hình kính lúp vô trong cái input*/ 
+    .inner-addon .glyphicon { 
+        position: absolute;
+        padding: 10px;
+        pointer-events: none;
+    }
+    input::-webkit-input-placeholder{ /* Này làm cho cái chữ trong placeholder nó to lên*/
+    font-size: 25px;
+    line-height: 4;
+    }
+    /* add padding  - này là canh chữ search trong placeholder nó thục ra trong input*/ 
+    .left-addon input  { padding-left:  60px; }
+    .right-addon input { padding-right: 30px; }
+    a{
+        color: white;
+    }
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+
+  
+}
+
+.partner img {
+	
+	transition: .3s ease-in-out;
+	max-width: 155px;
+}
+.partner img:hover {
+	transform: scale(1.2);
+}
+.partner {
+	background-color: #f8f6f6;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+/* Những class partner1 là dành cho giới thiệu sản phẩm  */
+.partner1 img {
+	transition: .3s ease-in-out;
+	max-width: 155px;
+}
+.partner1 img:hover {
+	transform: scale(1.1);
+}
+.partner1 {
+	background-color: #ffffff;
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+/* Này là làm cho cái logo nó nổi lên to hơn  */
+.partner_header_logo img {
+	
+	transition: .3s ease-in-out;
+	max-width: 155px;
+}
+.partner_header_logo img:hover {
+	transform: scale(1.6);
+}
+.partner_header_logo {
+	background-color: #f8f6f6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+

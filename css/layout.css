@@ -1,0 +1,59 @@
+/* style icon - này là cho cái hình kính lúp vô trong cái input*/ 
+.inner-addon .glyphicon { 
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+input::-webkit-input-placeholder{ /* Này làm cho cái chữ trong placeholder nó to lên*/
+font-size: 25px;
+line-height: 4;
+}
+/* add padding  - này là canh chữ search trong placeholder nó thục ra trong input*/ 
+.left-addon input  { padding-left:  60px; }
+.right-addon input { padding-right: 30px; }
+a{
+    color: white;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+float: left;
+width: 33.33%;
+padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+content: "";
+clear: both;
+
+
+}
+
+.partner img {
+    
+    transition: .3s ease-in-out;
+    max-width: 155px;
+}
+.partner img:hover {
+    transform: scale(1.2);
+}
+.partner {
+    background-color: #f8f6f6;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+/* Những class partner1 là dành cho giới thiệu sản phẩm  */
+.partner1 img {
+    
+    transition: .3s ease-in-out;
+    max-width: 155px;
+}
+.partner1 img:hover {
+    transform: scale(1.7);
+}
+.partner1 {
+    background-color: #ffffff;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
